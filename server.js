@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express(); //Instantiate a server using the express library
-const PORT = 3001; //Incoming connections that we want to interact with our server need to do so on PORT 3000
+const PORT = process.env.PORT || 3001; //Incoming connections that we want to interact with our server need to do so on PORT 3000
 const path = require('path'); // Import built-in Node.js package 'path' to resolve path of files that are located on the server
 const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
